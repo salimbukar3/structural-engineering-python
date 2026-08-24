@@ -64,6 +64,16 @@ Maximum bending moment: 100.83 kN·m at x = 3.67 m
 
 The maximum moment occurs where the shear force changes sign before the point load.
 
+## Diagrams
+
+### Shear Force Diagram
+
+![Shear Force Diagram](results/shear_force_diagram.svg)
+
+### Bending Moment Diagram
+
+![Bending Moment Diagram](results/bending_moment_diagram.svg)
+
 ## Engineering Method
 
 The program is based on static equilibrium:
@@ -83,10 +93,13 @@ structural-engineering-python/
 ├── beam_analysis.py
 ├── test_beam_analysis.py
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── results/
+    ├── shear_force_diagram.svg
+    └── bending_moment_diagram.svg
 ```
 
-When the program is run, it creates a `results/` folder containing the generated diagrams.
+When the program is run, it can regenerate the diagrams in the `results/` folder.
 
 ## How to Run
 
