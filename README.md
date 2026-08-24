@@ -20,6 +20,7 @@ The aim is to demonstrate how engineering calculations can be implemented, check
 - Shear Force Diagram (SFD)
 - Bending Moment Diagram (BMD)
 - Basic input validation
+- Automated validation tests for known beam cases
 
 ## Worked Example
 
@@ -80,6 +81,7 @@ The concentrated point load is applied only once the evaluated section passes it
 structural-engineering-python/
 ├── README.md
 ├── beam_analysis.py
+├── test_beam_analysis.py
 ├── requirements.txt
 └── .gitignore
 ```
@@ -108,6 +110,14 @@ python beam_analysis.py
 ```
 
 The numerical results are printed in the terminal and the SFD/BMD files are saved in the `results/` folder.
+
+### 4. Run the validation tests
+
+```bash
+python -m unittest test_beam_analysis.py
+```
+
+The tests check the worked example as well as standard central point-load and full-span UDL cases.
 
 ## Dependencies
 
@@ -150,6 +160,7 @@ Future versions may add:
 - NumPy
 - Matplotlib
 - Engineering verification
+- Automated testing
 - Technical documentation
 
 ## Author
